@@ -6,7 +6,7 @@
 
 .header {
   background-color: rgba(11, 15, 11, 0.596);
-  width: 100%; /*calc(100% - 40px);  →  100% - les 40px du padding*/
+  width: 100%; 
   height: 90px;
   position: fixed;
   top: 0;
@@ -14,13 +14,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0px 20px 0px 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* opacity: 0.9; */
 }
 
 .header_logo img {
-  max-height: 50px;
+  max-height: 70px;
+}
+
+.header_nav_title h1 {
+  font-family: "Rock Salt", cursive;
+  font-weight: 500;
+  font-size: 35px;
+  color: #EACBA3;
 }
 
 .header_nav_menu {
@@ -42,8 +49,9 @@
 
 .header_nav_menu_link a {
   color: whitesmoke;
-  font-family: Arial;
-  font-weight: 600;
+  font-family: "Atma", system-ui;
+  font-weight: 400;
+  font-size: 25px;
   text-decoration: none;
   position: relative;
 }
@@ -81,6 +89,8 @@
 .header_image_banniere {
   position: relative;
   z-index: -1;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 0px 5px 2px #182923;
 }
 
 /*.title_image_banniere {
@@ -94,16 +104,16 @@
 }*/
 
 .title_banniere {
-  background-color: rgba(11, 15, 11, 0.596);
-  color: whitesmoke;
+  color: #213321;
   font-size: 50px;
-  font-family: "Almendra", serif;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
   text-align: center;
 }
 
 .container_activites_body {
   position: relative;
-  margin: 20px; 
+  margin: 20px;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -129,11 +139,11 @@
 .activites_body:hover {
   opacity: 1;
   transition: all 0.5s linear;
-} 
+}
 
 .texte_activites_body {
   position: absolute;
-  font-family: "Almendra", serif;
+  font-family: "Rock Salt", cursive;
   font-size: 3rem;
   font-style: italic;
   color: #182923;
@@ -154,7 +164,7 @@
   font-weight: bold;
   text-shadow: #2c2627 2px 2px 10px 2px;
   overflow: hidden;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .activites_body button {
@@ -166,7 +176,7 @@
 button {
   left: 80px;
   margin: 5%;
-width: 50%;
+  width: 50%;
   /* align-self: center; */
   background-color: transparent;
   /* background-image: none; */
@@ -181,11 +191,10 @@ width: 50%;
   /* color: #41403e; */
   cursor: pointer;
   /* display: inline-block; */
-  font-family: Neucha, sans-serif;
   font-size: 1rem;
   line-height: 23px;
   /* outline: none; */
-  padding: .75rem;
+  padding: 0.75rem;
   /* text-decoration: none; */
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -198,17 +207,17 @@ width: 50%;
 }
 
 button:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  /* transform: translate3d(0, 2px, 0); */
+  scale: 1.05;
 }
 
 button:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
-
-
-@media screen and (max-width: 650px) { /*480px max*/
+@media screen and (max-width: 650px) {
+  /*480px max*/
   .header_burger {
     display: block;
     cursor: pointer;
