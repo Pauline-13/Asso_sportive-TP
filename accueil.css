@@ -1,0 +1,486 @@
+/* -------------------- PAGE ENTIERE ------------------------- */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(236, 197, 55, 0.151);
+}
+
+/* ------------------------ NAV -------------------------------- */
+
+.header {
+  background-color: rgba(11, 15, 11, 0.596);
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0px 20px 0px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header_logo img {
+  max-height: 70px;
+}
+
+.header_nav_title h1 {
+  font-family: "Rock Salt", cursive;
+  font-weight: 500;
+  font-size: 35px;
+  color: #eacba3e5;
+  text-shadow: 2px 2px 10px;
+}
+
+.header_nav_menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header_nav_menu_link {
+  margin-right: 20px;
+}
+
+.header_nav_menu_link:last-of-type {
+  /*last of type : le dernier lien garde la marge initiale*/
+  margin-right: initial;
+}
+
+.header_nav_menu_link a {
+  color: #f8f3e6;
+  font-family: "Atma", system-ui;
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration: none;
+  position: relative;
+}
+
+.header_nav_menu_link a:after {
+  content: "";
+  height: 2px;
+  background-color: #f8f3e6;
+  width: 0;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  transition: 0.2s all ease-in-out;
+}
+
+.header_nav_menu_link a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.header_burger {
+  display: none;
+}
+
+.header_burger svg {
+  stroke: #f8f3e6; /*définit la couleur du SVG*/
+  width: 20px;
+  height: 22px;
+}
+
+.header_nav_close {
+  display: none;
+}
+
+.header_image_banniere {
+  position: relative;
+  z-index: -1;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 0px 5px 2px #182923;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* ------------------------- BODY --------------------------- */
+.barre_body {
+  width: 1200px;
+  border: #f8f3e6 solid 1px;
+  opacity: 0.5;
+  box-shadow: #213321 0px 0px 10px;
+  /* margin: 0px 150px 70px 150px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.title_banniere {
+  color: #213321;
+  font-size: 60px;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 5px 5px 10px;
+}
+
+.texte_description_asso {
+  text-align: justify;
+  font-family: "Atma", system-ui;
+  font-size: 25px;
+  margin: 15px 100px 50px 100px;
+  color: #2c2627;
+}
+
+.last_texte_description_asso {
+  font-size: 30px;
+  color: #2c2627;
+}
+
+.principale_activites {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+
+.container_activites_body {
+  position: relative;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* les tailles vont dépendre des images */
+  max-width: 400px; /* prendra 400px tant qu'il y a de la place */
+  height: 400px; /* pas besoin de max ici, sauf peut être en mode mobile si on veux voir la card entière sur l'écran mobile */
+  overflow: hidden; /* si jamais l'image ou le texte sont trop grands/longs, on "coupe" le reste ; donc attention surtout au texte ! */
+  box-shadow: rgba(11, 15, 11, 0.596) 2px 2px 10px 2px;
+  border-radius: 5px;
+  border: 1px solid rgba(11, 15, 11, 0.596);
+}
+
+.container_activites_body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.activites_body {
+  opacity: 0;
+}
+
+.activites_body:hover {
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+
+.texte_activites_body {
+  position: absolute;
+  font-family: "Rock Salt", cursive;
+  font-size: 3rem;
+  font-style: italic;
+  color: #182923;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: justify;
+  background-color: rgba(200, 200, 200, 0.7);
+  font-weight: bold;
+  text-shadow: #2c2627 2px 2px 10px 2px;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.activites_body button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+button {
+  left: 80px;
+  margin: 5%;
+  width: 50%;
+  background-color: transparent;
+  border-style: solid;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 23px;
+  padding: 0.75rem;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  /* transform: translate3d(0, 2px, 0); */
+  scale: 1.05;
+  background-color: #213321;
+  color: rgb(220, 217, 217);
+}
+
+button:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+/* ----------------- FOOTER -----------------------*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  color: #f8f3e6;
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 10px 10px 0px 0px;
+  border-top: 1px solid #f8f3e6;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* background-image: url(Images/pexels-gui-basto-517975-1249586.jpg); */
+  /* background-position: 0%; */
+  background-color: rgba(11, 15, 11, 0.119);
+}
+
+#copyright {
+  font-size: 15px;
+  font-family: "Atma", system-ui;
+}
+
+#mention_footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Rock Salt", cursive;
+  font-size: 20px;
+  font-weight: 400;
+  width: 20%;
+  color: #213321;
+  opacity: 0.8;
+  text-shadow: 5px 5px 10px;
+}
+
+#sources_footer {
+  width: 40%;
+  display: inline-flex;
+}
+
+#texte_sources_footer {
+  font-family: "Atma", system-ui;
+  font-size: 20px;
+  padding-left: 30px;
+  font-weight: 500;
+  color: #213321;
+  width: 10%;
+}
+
+#sources_footer a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: #213321;
+  font-weight: 400;
+  font-family: "Atma", system-ui;
+  font-size: 18px;
+}
+
+#link_footer {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.barre_footer {
+  height: 80px;
+  border: #f8f3e6 solid 1px;
+  opacity: 0.5;
+  box-shadow: white 0px 0px 10px;
+}
+
+/* ----------------------- Responsive ------------------------- */
+
+@media screen and (max-width: 480px) {
+  .header {
+    height: 70px;
+  }
+
+  .header_burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header_nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 200px;
+    background-color: #213321;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .header_nav.open {
+    display: flex;
+    animation: transformMenu 300ms linear forwards;
+  }
+
+  @keyframes transformMenu {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: initial;
+    }
+  }
+
+  .header_nav_title h1 {
+    font-size: 20px;
+  }
+
+  .header_nav_menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header_nav_menu_link {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .header_nav_menu_link a {
+    font-size: 25px;
+  }
+
+  .header_nav_close {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header_nav_close svg {
+    stroke: whitesmoke;
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .overlay_menu_mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+  }
+
+  .overlay_menu_mobile.open {
+    display: block;
+  }
+
+  /* ---------------------- BODY ---------------------------- */
+
+  /* .barre_body {
+ width: 200px;
+ margin-bottom: 50px;
+  } */
+
+  .title_banniere {
+    font-size: 50px;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .texte_description_asso {
+    text-align: justify;
+    font-family: "Atma", system-ui;
+    font-size: 25px;
+    margin: 10px 50px 30px 50px;
+  }
+
+  .principale_activites {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .container_activites_body {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .activites_body:active {
+    opacity: 1;
+    transition: all 0.5s linear;
+  }
+
+  /* ------------------------ FOOTER ----------------------- */
+
+  footer {
+    height: 200px;
+  }
+
+  #mention_footer {
+    /* display: flex;
+    justify-content: center; */
+    font-size: 15px;
+    font-weight: 400;
+    width: 20%;
+  }
+
+  #sources_footer {
+    width: 22%;
+    display: inline-block;
+  }
+  
+  #texte_sources_footer {
+    font-size: 15px;
+    padding-left: 0px;
+  }
+  
+  #sources_footer a,
+  li {
+    font-size: 15px;
+  }
+
+  #link_footer {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .barre_footer {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .barre_body {
+    width: 500px;
+    margin-bottom: 50px;
+     }
+}
+
+
