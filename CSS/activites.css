@@ -1,40 +1,113 @@
-.container_body {
-background-color: cyan;
-  height: 500px;
-  width: 100%;
+body {
+  background-color: rgba(236, 197, 55, 0.151);
+}
+
+.title_body {
+  color: #576857;
+  font-size: 60px;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 5px 5px 10px;
+}
+
+article {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.background_left_body {
-  background-color: darkred;
-  width: 33%;
-  height: 500px;
+.container_activites {
   display: flex;
-  justify-content: end;
+  flex-direction: row;
+  height: 450px;
+  width: 95%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: dotted 3px #213321;
 }
 
-/* .background_right_body {
-  background-color: darkgreen;
-  width: 66%;
-  height: 500px;
-} */
-
-.image_body {
-  /* position: relative; */
-  left: 0;
-  top: 0;
-  margin: 20px;
-  width: 100%;
-  max-width: 300px;
-  height: 300px;
-  overflow: hidden; 
-  box-shadow: rgba(11, 15, 11, 0.596) 2px 2px 10px 2px;
-  border-radius: 5px;
-  border: 1px solid rgba(11, 15, 11, 0.596);
+.image_activites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  /* border: 1px solid #213321; */
+  border-radius: 10px 0px 0px 10px;
 }
 
-.image_body img {
+.image_activites img {
+  max-width: 350px;
+  max-height: 350px;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: rgba(11, 15, 11, 0.596) 2px 2px 10px 2px;
+  border-radius: 2px;
+  border: 1px solid rgba(11, 15, 11, 0.596);
+  margin: 10px;
+}
+
+.paragraphe_activites {
+  /* background-color: #364249; */
+  background-color: #576857;
+  width: 65%;
+  overflow-y: auto; /* ajoute une scrollbar si trop de contenu */
+  border-radius: 10px 10px 10px 10px;
+}
+
+.paragraphe_activites::-webkit-scrollbar {
+  width: 6px;
+}
+
+.title_activites {
+  color: #f8f3e6;
+  font-size: 50px;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 5px 5px 10px #213321;
+}
+
+.texte_activites {
+  text-align: justify;
+  font-family: "Atma", system-ui;
+  font-size: 18px;
+  color: #e0d2c0e5;
+  padding: 0px 25px 25px 25px;
+  margin-top: 20px;
+}
+
+/* VOIR POUR AJOUTER LA MÊME TRANSITION QUE SUR LES LIENS DE LA NAV A MON LIEN "CONTACT"
+
+.texte_activites a {
+text-decoration: none;
+}
+
+.texte_activites a:after {
+  width: 0;
+  right: 0;
+  transition: 0.2s all ease-in-out;
+}
+
+.texte_activites a:hover:after {
+  width: 100%;
+  left: 0;
+} */
+
+/* ----------------------------- Responsive --------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+  .title_body {
+    font-size: 50px;
+  }
+
+  .title_activites {
+    font-size: 35px;
+  }
+
 }

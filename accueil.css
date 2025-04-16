@@ -112,21 +112,23 @@ body {
 .barre_body {
   width: 800px;
   border: #f8f3e6 solid 1px;
+  border-radius: 5px;
   opacity: 0.5;
-  box-shadow: #213321 0px 0px 10px;
+  box-shadow: #213321 0px 0px 4px;
   /* margin: 0px 150px 70px 150px; */
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
-.title_banniere {
-  color: #213321;
+.title_body {
+  color: #576857;
   font-size: 60px;
   font-family: "Rock Salt", cursive;
   font-weight: 400;
   text-align: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin-bottom: 50px;
   text-shadow: 5px 5px 10px;
 }
 
@@ -134,7 +136,7 @@ body {
   text-align: justify;
   font-family: "Atma", system-ui;
   font-size: 25px;
-  margin: 15px 100px 50px 100px;
+  margin: 15px 100px 20px 100px;
   color: #2c2627;
 }
 
@@ -147,7 +149,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   margin-bottom: 100px;
 }
 
@@ -209,7 +211,7 @@ body {
 }
 
 button {
-  left: 80px;
+  left: 50px;
   margin: 5%;
   width: 50%;
   background-color: transparent;
@@ -230,13 +232,14 @@ button:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   /* transform: translate3d(0, 2px, 0); */
   scale: 1.05;
-  background-color: #213321;
+  background-color: #576857;
   color: rgb(220, 217, 217);
 }
 
 button:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
+
 
 /* ----------------- FOOTER -----------------------*/
 
@@ -407,7 +410,7 @@ li {
  margin-bottom: 50px; */
   }
 
-  .title_banniere {
+  .title_body {
     font-size: 50px;
     margin-top: 0px;
     padding-left: 10px;
