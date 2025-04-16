@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../CSS/activites.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Atma:wght@300;400;500;600;700&family=Chewy&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&family=Syne+Mono&family=Uncial+Antiqua&family=Walter+Turncoat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/vnd.icon" href="Images/favicone.png" />
+    <title>Activités</title>
+  </head>
+  <body>
+    <!-- ----------------------------- NAV ----------------------------------- -->
+    <div class="overlay_menu_mobile" onclick="closeMenuMobile()"></div>
+
+    <header class="header">
+      <div class="header_logo">
+        <img
+          src="../Images/logo.png"
+          alt="logo plage sur Canva"
+          style="width: 70px"
+          height="70px"
+        />
+      </div>
+
+      <div class="header_nav_title">
+        <h1>Côte & Sport</h1>
+      </div>
+
+      <nav class="header_nav">
+        <div class="header_nav_close" onclick="closeMenuMobile()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+
+        <ul class="header_nav_menu">
+          <!-- <li class="header_nav_menu_link">
+            <a href="#">Home</a>
+          </li> -->
+          <li class="header_nav_menu_link">
+            <a href="#">Blog</a>
+          </li>
+          <li class="header_nav_menu_link">
+            <a href="#">About</a>
+          </li>
+          <li class="header_nav_menu_link">
+            <a href="#">Connexion</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header_burger" onclick="openMenuMobile()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <script>
+      function openMenuMobile() {
+        document.querySelector(".header_nav").classList.add("open");
+        document.querySelector(".overlay_menu_mobile").classList.add("open");
+      }
+
+      function closeMenuMobile() {
+        document.querySelector(".header_nav").classList.remove("open");
+        document.querySelector(".overlay_menu_mobile").classList.remove("open");
+      }
+    </script>
+
+    <!-- -------------------------- BODY -------------------------------- -->
+
+    <div class="container_body">
+      <div class="background_left_body"><div class="image_body">
+        <img src="../Images/felipe-archer-9WLWuVuHK-E-unsplash.jpg" />
+      </div></div>
+      <!-- <div class="background_right_body"></div> -->
+
+    </div>
+
+
+
+    <!-- -------------------------- FOOTER ------------------------------ -->
+    <footer>
+      <p id="mention_footer"><span id="copyright">©</span> Côte & Sport</p>
+
+      <div class="barre_footer"></div>
+
+      <p id="texte_sources_footer">Sources :</p>
+      <br />
+      <ul id="sources_footer">
+        <a href="https://chatgpt.com/"><li>Chat GPT -</li></a>
+        <a href="https://icones8.fr/"><li>- Icons8 -</li></a>
+        <a href="https://fonts.google.com/"><li>- Google Fonts -</li></a>
+        <a href="https://unsplash.com/fr"><li>- Unsplash -</li></a>
+        <a href="https://www.pexels.com/fr-fr/"><li>- Pexels</li></a>
+      </ul>
+
+      <div class="barre_footer"></div>
+
+      <div id="link_footer">
+        <a href="#"
+          ><img
+            src="../Images/instagram.png"
+            alt="Logo Instagram sur Icons8"
+            height="40px"
+            width="40px"
+        /></a>
+
+        <a href="#">
+          <img
+            src="../Images/facebook.png"
+            alt="Logo Facebook sur Icons8"
+            height="40px"
+            width="40px"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

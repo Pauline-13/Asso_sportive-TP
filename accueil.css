@@ -110,7 +110,7 @@ body {
 
 /* ------------------------- BODY --------------------------- */
 .barre_body {
-  width: 1200px;
+  width: 800px;
   border: #f8f3e6 solid 1px;
   opacity: 0.5;
   box-shadow: #213321 0px 0px 10px;
@@ -314,6 +314,7 @@ li {
 /* ----------------------- Responsive ------------------------- */
 
 @media screen and (max-width: 480px) {
+    /* ---------------------- NAV --------------------- */
   .header {
     height: 70px;
   }
@@ -400,10 +401,11 @@ li {
 
   /* ---------------------- BODY ---------------------------- */
 
-  /* .barre_body {
- width: 200px;
- margin-bottom: 50px;
-  } */
+  .barre_body {
+    display: none;
+ /* width: 100px;
+ margin-bottom: 50px; */
+  }
 
   .title_banniere {
     font-size: 50px;
