@@ -36,8 +36,8 @@
     font-family: "Rock Salt", cursive;
     font-weight: 500;
     font-size: 35px;
-    color: #eacba3e5;
-    text-shadow: 2px 2px 10px;
+    color:#a8a7a2;
+    text-shadow: 2px 2px 10px ;
   }
   
   .header_nav_menu {
@@ -53,7 +53,6 @@
   }
   
   .header_nav_menu_link:last-of-type {
-    /*last of type : le dernier lien garde la marge initiale*/
     margin-right: initial;
   }
   
@@ -87,7 +86,7 @@
   }
   
   .header_burger svg {
-    stroke: #f8f3e6; /*définit la couleur du SVG*/
+    stroke: #f8f3e6; 
     width: 20px;
     height: 22px;
   }
@@ -275,8 +274,6 @@ footer {
   }
 
   #mention_footer {
-    /* display: flex;
-    justify-content: center; */
     font-size: 15px;
     font-weight: 400;
     width: 20%;
