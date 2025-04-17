@@ -105,7 +105,7 @@
     margin-bottom: 20px;
   }
 
-  /* ----------------- FOOTER -----------------------*/
+  /* ------------------------- FOOTER ----------------------------*/
 
 footer {
     display: flex;
@@ -117,7 +117,7 @@ footer {
     width: 100%;
     margin-top: 50px;
     border-radius: 10px 10px 0px 0px;
-    border-top: 1px solid #f8f3e6;
+    border-top: 1px solid #5b6e5b;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     /* background-image: url(Images/pexels-gui-basto-517975-1249586.jpg); */
     /* background-position: 0%; */
@@ -272,7 +272,7 @@ footer {
      /* ------------------------ FOOTER ----------------------- */
 
   footer {
-    height: 200px;
+    height: 150px;
   }
 
   #mention_footer {
@@ -289,13 +289,13 @@ footer {
   }
   
   #texte_sources_footer {
-    font-size: 15px;
+    font-size: 10px;
     padding-left: 0px;
   }
   
   #sources_footer a,
   li {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   #link_footer {

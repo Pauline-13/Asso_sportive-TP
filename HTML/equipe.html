@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="../CSS/equipe.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Atma:wght@300;400;500;600;700&family=Chewy&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&family=Syne+Mono&family=Uncial+Antiqua&family=Walter+Turncoat&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="icon" type="image/vnd.icon" href="../Images/favicone.png" />
+        <title>Équipe</title>
+      </head>
+<body>
+     <!-- ----------------------------- NAV ----------------------------------- -->
+     <div class="overlay_menu_mobile" onclick="closeMenuMobile()"></div>
+
+     <header class="header">
+       <div class="header_logo">
+         <a href="../accueil.html"><img
+           src="../Images/logo.png"
+           alt="logo plage sur Canva"
+           style="width: 70px"
+           height="70px"
+         /></a>
+       </div>
+ 
+       <div class="header_nav_title">
+         <h1>Côte & Sport</h1>
+       </div>
+ 
+       <nav class="header_nav">
+         <div class="header_nav_close" onclick="closeMenuMobile()">
+           <svg
+             xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             class="size-6"
+           >
+             <path
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               d="M6 18 18 6M6 6l12 12"
+             />
+           </svg>
+         </div>
+ 
+         <ul class="header_nav_menu">
+           <!-- <li class="header_nav_menu_link">
+             <a href="#">Home</a>
+           </li> -->
+           <li class="header_nav_menu_link">
+             <a href="../HTML/activites.html">Activités</a>
+           </li>
+           <li class="header_nav_menu_link">
+             <a href="../HTML/horaires.html">Contact</a>
+           </li>
+           <li class="header_nav_menu_link">
+             <a href="../HTML/equipe.html">Équipe</a>
+           </li>
+         </ul>
+       </nav>
+ 
+       <div class="header_burger" onclick="openMenuMobile()">
+         <svg
+           xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewBox="0 0 24 24"
+           stroke-width="1.5"
+           stroke="currentColor"
+           class="size-6"
+         >
+           <path
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+           />
+         </svg>
+       </div>
+     </header>
+ 
+     <script>
+       function openMenuMobile() {
+         document.querySelector(".header_nav").classList.add("open");
+         document.querySelector(".overlay_menu_mobile").classList.add("open");
+       }
+ 
+       function closeMenuMobile() {
+         document.querySelector(".header_nav").classList.remove("open");
+         document.querySelector(".overlay_menu_mobile").classList.remove("open");
+       }
+     </script>
+ 
+     <!-- -------------------------- BODY -------------------------------- -->
+ 
+     <main>
+        <img
+          src="../Images/banniere.jpg"
+          class="header_image_banniere"
+          style="width: 100%"
+        />
+  
+  <h1 class="title_body">Notre équipe</h1>
+
+  <article class="container_line">
+  <div class="container_equipe">
+    <div class="image_equipe">
+        <img src="../Images/a-vibrant-sun-drenched-photograph-of-a-s_8-pLzkLTRr2zK48ibfDuqw_q_DpuDrqT2KLiBBWiqcwaw.jpeg">
+    </div>
+    <div class="container_description_equipe">
+    <h3 class="name_equipe">Paul</h3>
+    <p class="description_equipe">Paul, le professeur de surf, c’est un peu le capitaine Crochet des vagues, mais en version cool et 100% zen ! Toujours un sourire accroché au visage, il arrive sur la plage comme un rayon de soleil, prêt à embarquer tout le monde dans l'aventure des océans. Avec son style décontracté et sa planche toujours à portée de main, Paul te montre comment dompter les vagues avec l'aisance d’un dauphin qui aurait pris des cours de yoga. Alors, prêt à partir à l’aventure avec Paul ?</p>
+  </div></div>
+
+  <div class="container_equipe">
+    <div class="image_equipe">
+        <img src="../Images/a-cinematic-portrait-photograph-captures_5v7AZdrTS8u-NY29dIvB-w_WVt7xjCLSS-RXQGILAqNyQ.jpeg">
+    </div>
+    <div class="container_description_equipe">
+    <h3 class="name_equipe">Erdeniz</h3>
+    <p class="description_equipe">Erdeniz, le professeur d’aviron, c’est le genre de coach qui transforme chaque rame en une aventure épique. Avec lui, tu ne te contentes pas de pagayer, tu fais partie d’une équipe qui déchire, même si tu es en train de découvrir le sport. Il a un regard affûté comme un aigle, capable de te donner le bon conseil au bon moment, et son énergie, c’est un peu comme un moteur à plein régime — impossible de ne pas se donner à fond quand il est là !
+        Alors, prêt à embarquer avec Erdeniz pour une aventure inoubliable ?
+    </p>
+  </div></div>
+
+  </article>
+
+  <article class="container_line">
+  <div class="container_equipe">
+    <div class="image_equipe">
+        <img src="../Images/professeure de rafting en combinaison, souriant, debout avec la mer en arrière plan_ 17-04-2025 at 13-29-40.jpeg">
+    </div>
+    <div class="container_description_equipe">
+    <h3 class="name_equipe">Amélie</h3>
+    <p class="description_equipe">Amélie, la professeure de rafting, c’est un peu la chef d’orchestre des torrents. Dès que tu poses les pieds dans le bateau, tu sais que tu es entre de bonnes mains. Elle a cette énergie débordante qui fait de chaque descente une aventure folle, mais toujours maîtrisée. Pas question de stresser, avec Amélie à la barre, c’est éclats de rire garantis, même en plein milieu des rapides !
+        Prêt(e) à t’élancer dans l’aventure avec Amélie ? Les rapides n’ont qu’à bien se tenir !
+    </p>
+  </div></div>
+
+  <div class="container_equipe">
+    <div class="image_equipe">
+        <img src="../Images/professeur de canoë kayak en combinaison, souriant, debout avec la mer en arrière plan 17-04-2025 at 13-32-33.jpeg">
+    </div>
+    <div class="container_description_equipe">
+    <h3 class="name_equipe">Aurélien</h3>
+    <p class="description_equipe">Le professeur de kayak, c’est le genre de coach à qui tu confies ton kayak les yeux fermés (et tes nerfs aussi, parfois). Il est à la fois calme et dynamique, capable de te guider avec précision tout en partageant sa passion pour les rivières et les lacs. Avec lui, tu n'es jamais seul face aux courants : il sait exactement comment te donner le coup de pagaie juste quand il faut, et t’aider à maîtriser ton équilibre. Alors, prêt à te laisser emporter par les eaux? Avec lui, chaque pagaie devient une nouvelle histoire à raconter !</p>
+  </div></div>
+</article>
+
+    <!-- -------------------------- FOOTER ------------------------------ -->
+    <footer>
+        <p id="mention_footer"><span id="copyright">©</span> Côte & Sport</p>
+  
+        <div class="barre_footer"></div>
+  
+        <p id="texte_sources_footer">Sources :</p>
+        <br />
+        <ul id="sources_footer">
+          <a href="https://chatgpt.com/"><li>Chat GPT -</li></a>
+          <a href="https://icones8.fr/"><li>- Icons8 -</li></a>
+          <a href="https://fonts.google.com/"><li>- Google Fonts -</li></a>
+          <a href="https://unsplash.com/fr"><li>- Unsplash -</li></a>
+          <a href="https://www.pexels.com/fr-fr/"><li>- Pexels --</li></a>
+          <a href="https://ideogram.ai/t/explore"><li>- Ideogram -</li></a>
+      <a href="https://new.express.adobe.com/"><li>- Adobe Express </li></a>
+        </ul>
+  
+        <div class="barre_footer"></div>
+  
+        <div id="link_footer">
+          <a href="#"
+            ><img
+              src="../Images/instagram.png"
+              alt="Logo Instagram sur Icons8"
+              height="40px"
+              width="40px"
+          /></a>
+  
+          <a href="#">
+            <img
+              src="../Images/facebook.png"
+              alt="Logo Facebook sur Icons8"
+              height="40px"
+              width="40px"
+            />
+          </a>
+        </div>
+      </footer>
+</body>
+</html>
