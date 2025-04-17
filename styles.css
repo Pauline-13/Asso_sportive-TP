@@ -119,8 +119,6 @@ footer {
     border-radius: 10px 10px 0px 0px;
     border-top: 1px solid #5b6e5b;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    /* background-image: url(Images/pexels-gui-basto-517975-1249586.jpg); */
-    /* background-position: 0%; */
     background-color: rgba(11, 15, 11, 0.119);
   }
   
@@ -200,7 +198,7 @@ footer {
       right: 0;
       width: 100vw;
       height: 200px;
-      background-color: #213321;
+      background-color: #576857;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -228,6 +226,7 @@ footer {
     }
   
     .header_nav_menu {
+      padding-top: 20px;
       flex-direction: column;
       align-items: flex-start;
     }

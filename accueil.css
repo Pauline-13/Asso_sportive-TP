@@ -118,7 +118,7 @@ body {
   /* margin: 0px 150px 70px 150px; */
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .title_body {
@@ -136,7 +136,7 @@ body {
   text-align: justify;
   font-family: "Atma", system-ui;
   font-size: 25px;
-  margin: 15px 100px 20px 100px;
+  margin: 15px 40px 100px 40px;
   color: #2c2627;
 }
 
@@ -411,7 +411,7 @@ li {
   }
 
   .title_body {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
@@ -421,7 +421,7 @@ li {
     text-align: justify;
     font-family: "Atma", system-ui;
     font-size: 25px;
-    margin: 10px 50px 30px 50px;
+    margin: 0px 20px 30px 20px;
   }
 
   .principale_activites {

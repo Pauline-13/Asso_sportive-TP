@@ -8,7 +8,7 @@ body {
   font-family: "Rock Salt", cursive;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-shadow: 5px 5px 10px;
 }
 
@@ -20,14 +20,16 @@ body {
 }
 
 .container_equipe {
-  border: 2px solid darkblue;
+  border: 1px dashed #312131;
+  border-radius: 20px;
   height: 850px;
   width: 35%;
-  overflow-y: auto; /* ajoute une scrollbar si trop de contenu */
+  backdrop-filter: brightness(80%);
+  overflow-y: auto; 
+  z-index: -1;
 }
 
 .image_equipe {
-  /* border: 2px solid darkred; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -45,11 +47,11 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid #576857;
+  filter: drop-shadow(0 0 0.75rem rgba(11, 15, 11, 0.596));
+  z-index: -1;
 }
 
 .container_description_equipe {
-  /* border: 2px solid darkmagenta; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,6 +62,8 @@ body {
 .name_equipe {
   font-family: "Rock Salt", cursive;
   font-size: 35px;
+  color: #213321;
+  text-shadow: 5px 5px 10px;
 }
 
 .description_equipe {
@@ -67,6 +71,7 @@ body {
   font-size: 20px;
   text-align: justify;
   padding: 20px;
+  color:#2c2627;
 }
 
 
@@ -76,14 +81,13 @@ body {
 @media screen and (max-width: 480px) {
     .title_body {
         font-size: 40px;
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom: 30px;
       }
     
   .container_line {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
   }
 
@@ -92,8 +96,6 @@ body {
     width: 85%;
     margin-bottom: 50px;
   }
-
-
 
   .image_equipe img {
     max-width: 250px;

@@ -1,15 +1,15 @@
 body {
-  background-color: rgb(111, 128, 111, 0.7);
-}
+    background-color: rgba(236, 197, 55, 0.151);
+  }
 
 .title_body {
-  color: #f8f3e6;
+    color: #576857;
   font-size: 60px;
   font-family: "Rock Salt", cursive;
   font-weight: 400;
   text-align: center;
   margin-bottom: 50px;
-  text-shadow: 2px 2px 5px #213321;
+  text-shadow: 5px 5px 10px;
 }
 
 article {
@@ -24,13 +24,15 @@ article {
   width: 100%;
   max-width: 400px;
   margin-top: 20px;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  box-shadow: rgba(11, 15, 11, 0.596) 2px 2px 10px 2px;
 }
 
 form {
   background: white;
   padding: 20px 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -108,14 +110,9 @@ button:active {
 
 .carte {
   margin-top: 20px;
+
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-footer {
-    background-color: #f8f3e6;
-    opacity: 0.8;
+  box-shadow: rgba(11, 15, 11, 0.596) 2px 2px 10px 2px;
 }
 
 
@@ -135,6 +132,12 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .container {
+    max-width: 350px;
   }
 
   form {
@@ -142,6 +145,7 @@ footer {
   }
 
   .carte {
-    height: 400px;
+    height: 380px;
+    max-width: 350px;
   }
 }

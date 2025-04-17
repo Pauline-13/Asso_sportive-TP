@@ -27,7 +27,7 @@ article {
   width: 95%;
   margin-top: 60px;
   margin-bottom: 40px;
-  border-radius: 10px;
+  border-radius: 0px 50px 0px 50px;
   border: solid 1px #213321;
 }
 
@@ -36,9 +36,9 @@ article {
   justify-content: center;
   align-items: center;
   width: 35%;
-  /* border: 1px solid #213321; */
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 0px 0px 0px 50px;
   backdrop-filter: brightness(80%);
+  z-index: -1;
 }
 
 .image_activites img {
@@ -49,18 +49,16 @@ article {
   height: 100%;
   object-fit: cover;
   box-shadow: rgba(11, 15, 11, 0.596) 2px 2px 10px 2px;
-  border-radius: 5px;
+  border-radius: 0px 50px 0px 50px;
   border: 1px solid rgba(11, 15, 11, 0.596);
   margin: 10px;
 }
 
 .paragraphe_activites {
-  /* background-color: #364249; */
   background-color: #576857;
   width: 65%;
-  overflow-y: auto; /* ajoute une scrollbar si trop de contenu */
-  border-radius: 0px 10px 0px 0px;
-  /* border: dotted 3px #f8f3e6; */
+  overflow-y: auto; /* scrollbar */
+  border-radius: 0px 50px 0px 0px;
   outline: 1px solid #213321;
 }
 
@@ -81,7 +79,7 @@ article {
   text-align: justify;
   font-family: "Atma", system-ui;
   font-size: 18px;
-  color: #e0d2c0e5;
+  color: #ece6dde5;
   padding: 0px 25px 25px 25px;
   margin-top: 20px;
 }
@@ -95,17 +93,15 @@ article {
   width: 95%;
   margin-top: 60px;
   margin-bottom: 40px;
-  border-radius: 10px;
+  border-radius: 50px 0px 50px 0px;
   border: solid 1px #213321;
 }
 
 .paragraphe_activites_inverse {
-  /* background-color: #364249; */
   background-color: #576857;
   width: 65%;
-  overflow-y: auto; /* ajoute une scrollbar si trop de contenu */
-  border-radius: 10px 0px 0px 0px;
-  /* border: dotted 3px #f8f3e6; */
+  overflow-y: auto;
+  border-radius: 50px 0px 0px 0px;
   outline: 1px solid #213321;
 }
 
@@ -137,8 +133,9 @@ article {
   align-items: center;
   width: 35%;
   /* border: 1px solid #213321; */
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 0px 50px 0px;
   backdrop-filter: brightness(80%);
+  z-index: -1;
 }
 
 .image_activites_inverse img {
@@ -149,38 +146,47 @@ article {
   height: 100%;
   object-fit: cover;
   box-shadow: rgba(11, 15, 11, 0.596) 2px 2px 10px 2px;
-  border-radius: 5px;
+  border-radius: 50px 0px 50px 0px;
   border: 1px solid rgba(11, 15, 11, 0.596);
   margin: 10px;
 }
 
-/* VOIR POUR AJOUTER LA MÊME TRANSITION QUE SUR LES LIENS DE LA NAV A MON LIEN "CONTACT"
-
-.texte_activites a {
-text-decoration: none;
+.link_contact_body {
+  text-decoration: none;
+  color: #213321;
+  font-weight: bold;
+  font-size: 16px;
 }
-
-.texte_activites a:after {
-  width: 0;
-  right: 0;
-  transition: 0.2s all ease-in-out;
-}
-
-.texte_activites a:hover:after {
-  width: 100%;
-  left: 0;
-} */
 
 /* ----------------------------- Responsive --------------------------------- */
 
 @media screen and (max-width: 480px) {
-
   .title_body {
-    font-size: 50px;
+    font-size: 40px;
+    margin-bottom: 0px;
   }
 
   .title_activites {
     font-size: 35px;
   }
 
+  .title_activites_inverse {
+    font-size: 35px;
+  }
+
+  .image_activites img {
+    max-width: 450px;
+    max-height: 550px;
+    box-shadow: none;
+    margin: 0px;
+    border-radius: 0px 0px 0px 50px;
+  }
+
+  .image_activites_inverse img {
+    max-width: 450px;
+    max-height: 550px;
+    box-shadow: none;
+    margin: 0px;
+    border-radius: 0px 0px 50px 0px;
+  }
 }
